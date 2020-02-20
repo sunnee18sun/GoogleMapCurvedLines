@@ -13,9 +13,11 @@
 		1549B0CF23FE33EC00431005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1549B0CD23FE33EC00431005 /* Main.storyboard */; };
 		1549B0D123FE33ED00431005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1549B0D023FE33ED00431005 /* Assets.xcassets */; };
 		1549B0D423FE33ED00431005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1549B0D223FE33ED00431005 /* LaunchScreen.storyboard */; };
+		B3037C278E618971B3BE34F8 /* Pods_GoogleMapCurvedLines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D640491D4AD22FCE380C08CB /* Pods_GoogleMapCurvedLines.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01D7351927F9A288A31FD96E /* Pods-GoogleMapCurvedLines.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapCurvedLines.release.xcconfig"; path = "Target Support Files/Pods-GoogleMapCurvedLines/Pods-GoogleMapCurvedLines.release.xcconfig"; sourceTree = "<group>"; };
 		1549B0C423FE33EC00431005 /* GoogleMapCurvedLines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapCurvedLines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1549B0C723FE33EC00431005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1549B0C923FE33EC00431005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		1549B0D023FE33ED00431005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1549B0D323FE33ED00431005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1549B0D523FE33ED00431005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5559556FB5786C45FA5D3BDC /* Pods-GoogleMapCurvedLines.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapCurvedLines.debug.xcconfig"; path = "Target Support Files/Pods-GoogleMapCurvedLines/Pods-GoogleMapCurvedLines.debug.xcconfig"; sourceTree = "<group>"; };
+		D640491D4AD22FCE380C08CB /* Pods_GoogleMapCurvedLines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapCurvedLines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3037C278E618971B3BE34F8 /* Pods_GoogleMapCurvedLines.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1549B0C623FE33EC00431005 /* GoogleMapCurvedLines */,
 				1549B0C523FE33EC00431005 /* Products */,
+				EF0C0AAE5D66F79E5AA5C0BA /* Pods */,
+				EF18B6A078559308A01B060D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = GoogleMapCurvedLines;
 			sourceTree = "<group>";
 		};
+		EF0C0AAE5D66F79E5AA5C0BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5559556FB5786C45FA5D3BDC /* Pods-GoogleMapCurvedLines.debug.xcconfig */,
+				01D7351927F9A288A31FD96E /* Pods-GoogleMapCurvedLines.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF18B6A078559308A01B060D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D640491D4AD22FCE380C08CB /* Pods_GoogleMapCurvedLines.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1549B0D823FE33ED00431005 /* Build configuration list for PBXNativeTarget "GoogleMapCurvedLines" */;
 			buildPhases = (
+				36C07A42B0CD9A9D8A17F2CF /* [CP] Check Pods Manifest.lock */,
 				1549B0C023FE33EC00431005 /* Sources */,
 				1549B0C123FE33EC00431005 /* Frameworks */,
 				1549B0C223FE33EC00431005 /* Resources */,
+				EA82202187EC12D1757DC730 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36C07A42B0CD9A9D8A17F2CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleMapCurvedLines-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA82202187EC12D1757DC730 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMapCurvedLines/Pods-GoogleMapCurvedLines-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMapCurvedLines/Pods-GoogleMapCurvedLines-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMapCurvedLines/Pods-GoogleMapCurvedLines-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1549B0C023FE33EC00431005 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		1549B0D923FE33ED00431005 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5559556FB5786C45FA5D3BDC /* Pods-GoogleMapCurvedLines.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		1549B0DA23FE33ED00431005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D7351927F9A288A31FD96E /* Pods-GoogleMapCurvedLines.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
