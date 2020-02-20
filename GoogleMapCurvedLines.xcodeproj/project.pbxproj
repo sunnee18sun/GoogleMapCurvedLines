@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		1549B0CF23FE33EC00431005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1549B0CD23FE33EC00431005 /* Main.storyboard */; };
 		1549B0D123FE33ED00431005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1549B0D023FE33ED00431005 /* Assets.xcassets */; };
 		1549B0D423FE33ED00431005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1549B0D223FE33ED00431005 /* LaunchScreen.storyboard */; };
+		1549B0DF23FE431F00431005 /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 1549B0DE23FE431F00431005 /* mapStyle.json */; };
 		B3037C278E618971B3BE34F8 /* Pods_GoogleMapCurvedLines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D640491D4AD22FCE380C08CB /* Pods_GoogleMapCurvedLines.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		1549B0D023FE33ED00431005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1549B0D323FE33ED00431005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1549B0D523FE33ED00431005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1549B0DE23FE431F00431005 /* mapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapStyle.json; sourceTree = "<group>"; };
 		5559556FB5786C45FA5D3BDC /* Pods-GoogleMapCurvedLines.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapCurvedLines.debug.xcconfig"; path = "Target Support Files/Pods-GoogleMapCurvedLines/Pods-GoogleMapCurvedLines.debug.xcconfig"; sourceTree = "<group>"; };
 		D640491D4AD22FCE380C08CB /* Pods_GoogleMapCurvedLines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapCurvedLines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 		1549B0C623FE33EC00431005 /* GoogleMapCurvedLines */ = {
 			isa = PBXGroup;
 			children = (
+				1549B0DE23FE431F00431005 /* mapStyle.json */,
 				1549B0C723FE33EC00431005 /* AppDelegate.swift */,
 				1549B0C923FE33EC00431005 /* SceneDelegate.swift */,
 				1549B0CB23FE33EC00431005 /* ViewController.swift */,
@@ -80,7 +83,6 @@
 				5559556FB5786C45FA5D3BDC /* Pods-GoogleMapCurvedLines.debug.xcconfig */,
 				01D7351927F9A288A31FD96E /* Pods-GoogleMapCurvedLines.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1549B0DF23FE431F00431005 /* mapStyle.json in Resources */,
 				1549B0D423FE33ED00431005 /* LaunchScreen.storyboard in Resources */,
 				1549B0D123FE33ED00431005 /* Assets.xcassets in Resources */,
 				1549B0CF23FE33EC00431005 /* Main.storyboard in Resources */,
